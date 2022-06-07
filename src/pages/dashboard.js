@@ -10,6 +10,9 @@ import { AppBar,
          ListItemIcon,
          ListItemText,
          Divider,
+         Avatar,
+         AvatarGroup,
+         Tooltip,
         
         
 } from "@mui/material";
@@ -55,12 +58,26 @@ src="/assets/svg/bars.svg"
   </Toolbar>
 </AppBar>
 <Drawer anchor="left"  open={open} onClose={handleClose}>
-<Box sx={{ minWidth: "200px", display: "flex", flexDirection: "column"}}>
+<Box
+ sx={{ minWidth: "200px", height: "100vh", display: "flex", flexDirection: "column",}}
+ >
 
-<Box></Box>
+<Box sx={{ padding: "12px", display: "flex"}}>
+  <Avatar/>
+  <Box sx={{ marginleft: "8px"}}>
+    <Tooltip title="vapeshop@gmail.com"> 
+    <Typography color ="primary" noWrap sx={{maxWidth: "150px"}}>
+    vapeshop@gmail.com
+    </Typography>
+    </Tooltip>
+
+    <Typography color="secondary">Admin</Typography>
 
 
-<List sx={{ marginTop: "55px"}}>
+</Box>
+</Box>
+
+<List sx={{ flexGrow: 1 }}>
 <Divider/>
 
 
@@ -93,11 +110,27 @@ src="/assets/svg/bars.svg"
     <ListItemText primary="Settings"/>
   </ListItem>
 
+  </List>
+
+
+<List>
+  <ListItem button>
+<ListItemIcon>
+<Image src="/assets/svg/signouts.svg" alt="signout" width={25} height={25} />
+</ListItemIcon>
+    <ListItemText primary="Signout"/>
+  </ListItem>
 
 
 
 
-</List>
+
+  </List>
+
+
+  
+ 
+
 
 </Box>
 </Drawer>
