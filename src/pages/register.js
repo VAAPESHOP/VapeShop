@@ -2,6 +2,9 @@ import { Box, Button, Paper, TextField, Typography } from "@mui/material";
 import { useRouter } from "next/router";
 
 import global from "../styles/global";
+
+import Head from "next/head";
+
 const style = {
   linkStyle: {
     cursor: "pointer",
@@ -24,6 +27,9 @@ export default function Register() {
         alignItems: "center",
       }}
     >
+      <Head>
+        <title>Vape Account Registration</title>
+      </Head>
       <Box>
         <Typography variant="h5">Create new account</Typography>
       </Box>

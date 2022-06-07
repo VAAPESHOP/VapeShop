@@ -12,6 +12,8 @@ import { useState } from "react";
 
 import global from "../styles/global";
 
+import Head from "next/head";
+
 const style = {
   linkStyle: {
     cursor: "pointer",
@@ -81,6 +83,9 @@ const [open, setOpen] = useState(false);
         alignItems: "center",
       }}
     >
+       <Head>
+        <title>Vape Sign-in</title>
+      </Head>
       <Box>
         <Typography variant="h3">Please Sign In</Typography>
       </Box>
