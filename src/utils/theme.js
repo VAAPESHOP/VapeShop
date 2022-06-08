@@ -3,7 +3,29 @@ import { createTheme } from "@mui/material";
 const theme = createTheme({
   palette: {
     mode: "light",
+    primary:{
+      main: "#1fc4d6",
+    },
+    secondary:{
+      main:"#120e12"
+    },
+
+    dashboard: {
+      bg1:"#06283D",
+      bg2: "#1363DF",
+      bg3: "#F15412",
+    },
+    text: {
+      t1:"#000",
+      t2:"#fff",
+    }
   },
+
+
+
+
+
+
 
   typography: {
     fontFamily: [
