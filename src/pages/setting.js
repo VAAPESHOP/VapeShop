@@ -1,12 +1,12 @@
 import React from 'react'
 
 import AdminLayout from '../components/AdminLayout'
-export default function Dashboard() {
+export default function Setting() {
   return (
-    <div>Dashboard page</div>
+    <div>settings page</div>
   )
 }
-Dashboard.getLayout = function getLayout(page){
+Setting.getLayout = function getLayout(page){
 return <AdminLayout>
   {page}
 </AdminLayout>
