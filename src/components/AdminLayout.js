@@ -84,6 +84,11 @@ vapeshop@gmail.com
 <List sx={{ flexGrow: 1 }}>
 <Divider/>
 
+
+
+
+
+
 <ListItem button onClick={()=> drawerGotoPage ("/dashboard")}
 selected={router.pathname.includes("dashboard")}
 >
@@ -92,6 +97,19 @@ selected={router.pathname.includes("dashboard")}
 </ListItemIcon>
 <ListItemText primary="Dashboard"/>
 </ListItem>
+
+
+<ListItem button onClick={()=> drawerGotoPage ("/market")}
+selected={router.pathname.includes("market")}
+>
+  
+<ListItemIcon>
+<Image src="/assets/svg/market.svg" alt="market" width={25} height={25} />
+</ListItemIcon>
+<ListItemText primary="Market"/>
+</ListItem>
+
+
 
 <ListItem button onClick={()=> drawerGotoPage ("/users")}
 selected={router.pathname.includes("users")}

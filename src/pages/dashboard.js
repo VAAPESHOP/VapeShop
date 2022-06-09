@@ -3,8 +3,10 @@ import { Box, Grid, Paper, Typography } from '@mui/material'
 import AdminLayout from '../components/AdminLayout'
 
 import Image from "next/image";
+import Head from "next/head";
 
 export default function Dashboard() {
+
 
   const style = {
     paper1:{
@@ -33,7 +35,11 @@ export default function Dashboard() {
     <Box sx= {{display: "flex", alignItems: "center"}}>
     <Image src= "/assets/svg/dashboard.svg" alt="dashboard" width={30} height={30} />
     <Typography variant= "h1" sx={{marginLeft:"12px"}}>Dashboard</Typography>
+    <Head>
+    <title>DASHBOARD-PAGE</title>
+    </Head>
     </Box>
+    
     
     <Grid container spacing= {2} sx={{marginTop:"2px"}}>
       <Grid item xs={12} sm>
